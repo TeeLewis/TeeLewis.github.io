@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Taco Shop</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            #menu, #take-order {
+                display: flex;
+                flex-direction: row;
+            }
+
+            #take-order > p {
+                padding-right: 10px;
+            }
+
+            .menu-item {
+                border: 3px solid gray;
+            }
+
+            .menu-item > h4,
+            .menu-item > img {
+                padding: 10px;
+                padding-bottom: 5px;
+            }
+
+            img {
+                width: 250px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="all-contents">
+            <nav>
+                <h1>Taco Shop</h1>
+                <div id="take-order">
+                    <p>When you're ready to place your order, click here: </p>
+                    <button>Place Order</button>
+                </div>
+            </nav>
+            <main>
+                <h3>Menu</h3>
+                <div id="menu">
+                    <div id="three-tacos" class="menu-item">
+                        <h4> #1 - Three Tacos</h4>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG-phbs_RqH7HoN_2XLKiTXd0zTOeMGLncug&usqp=CAU">
+                        <h4>6.99</h4>
+                    </div>
+                    <div id="five-tacos" class="menu-item">
+                        <h4>#2 - Five Tacos</h4>
+                        <img src="https://i2.wp.com/thesuburbansoapbox.com/wp-content/uploads/2021/02/Birria-Tacos-8.jpg">
+                        <h4>9.99</h4>
+                    </div>
+                    <div id="three-burritos" class="menu-item">
+                        <h4> #3 - Three Burritos</h4>
+                        <img src="https://thumbs.dreamstime.com/z/three-meat-burritos-table-front-view-bean-vegetable-wheat-tortillas-old-wooden-68667061.jpg">
+                        <h4>8.99</h4>
+                    </div>
+                    <div id="lemonade" class="menu-item">
+                        <h4># 4 - Lemonade</h4>
+                        <img src="https://i3.wp.com/lmld.org/wp-content/uploads/2022/04/Lemonade-4.jpg">
+                        <h4>1.85</h4>
+                    </div>
+                    <div id="pink-lemonade" class="menu-item">
+                        <h4>#5 - Pink Lemonade</h4>
+                        <img src="https://celebratingsweets.com/wp-content/uploads/2020/07/Pink-Lemonade-1-2.jpg">
+                        <h4>1.85</h4>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script>
+            $('button').on('click',takeOrder);
+            function takeOrder() {
+                var total = 0
+            }
+        </script>
+    </body>
+</html>
