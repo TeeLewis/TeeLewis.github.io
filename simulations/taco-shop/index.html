@@ -72,6 +72,47 @@
             $('button').on('click',takeOrder);
             function takeOrder() {
                 var total = 0
+                
+                var orderNumber = prompt('What combo number would like to order?');
+                if (orderNumber === '1') {
+                    total += 6.99;
+                } else if (orderNumber === '2') {
+                    total += 9.99;
+                } else if (orderNumber === '3') {
+                    total += 8.99;
+                } else if (orderNumber === '4') {
+                    total += 1.85;
+                } else if (orderNumber === '5') {
+                    total += 1.85;
+                } else {
+                    alert('Sorry, you entered an incorrect combo number'); 
+                }
+
+                var chipsAnd = prompt('Would you like chips and queso($2.99) or chips and salsa($2.99)? Type in "queso" for chips and queso, "salsa" for chips and salsa, or "no" if you want to limit your happiness and not get chips.');
+
+                if (chipsAnd === 'queso') {
+                    total += 2.99;
+                } else if (chipsAnd === 'salsa') {
+                    total += 2.99;
+                } else if (chipsAnd === 'no') {
+                    total += 0;
+                } else {
+                    alert("Sorry, the information you entered was not correct");
+                }
+
+                var tacoSauce = prompt('Would you like mild, hot, or extreme heat sauce? Type in "mild" for mild sauce, "hot" for hot sauce, "extreme heat" for extreme heat sauce.');
+
+                if (tacoSauce === 'mild') {
+                    total += 0;
+                } else if (tacoSauce === 'hot') {
+                    total += 0;
+                } else if (tacoSauce === 'extreme heat') {
+                    total += 0;
+                } else {
+                    alert('Sorry, the information you entered was not correct');
+                }
+
+                alert('The total for your order is ' + total + '. We\'ll have it out shortly. Thanks for visiting the taco shop, and have a nice day!');
             }
         </script>
     </body>
