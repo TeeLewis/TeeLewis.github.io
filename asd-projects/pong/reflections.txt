@@ -1,0 +1,39 @@
+### User Story / Gameplay
+- Describe the gameplay
+A ball is hit back and forth between two players with paddles until the ball goes past one of the players paddles.
+
+- What are the conditions when the game begins?
+When the game begins, the ball is placed in the middle of the screen and will move in a random direction. Also, both players will start with zero points.
+
+- Does the game have an end? If so, what are the conditions for when it ends?
+The game ends once a player reaches 11 points.
+
+- What `if`s will there be?
+If paddle touches top or bottom edge then reverse the paddle movement.
+If ball touches paddle, then increase ball speed and reverse the ball.
+If ball touches right or left edge then end game.
+
+### Visual Game Components:
+- What are the visual game components? For example, in Bouncing Box, the game components were the board and the box.
+The paddles, the ball, and score boxes.
+
+  - Which will be static? (the board)
+  The Score Box
+
+  - Which will be animated? (the box)
+  The Paddles and the ball
+
+- What data will you need to manage each game component? For example, in Bouncing Box, the data values were `positionX`, `speedX`, and `points`.
+I will need to manage the postion, speed, points, and keys.
+
+
+### Events / Logic 
+- What events will occur in this game? (timer events, keyboard events, clicking events?)
+Keyboard events 
+
+- How do those events affect the data of the program?
+The event affects the data because once the paddles touch the top or the bottom edge, the position will have to get reversed. 
+
+- For each "event", write out the high-level logic of what will happen. It is better (and tricky) to be as specific as you can while remaining high-level!
+When you press up or down, the paddles will move up or down. Also, the paddles will move if you press w or s.
+
