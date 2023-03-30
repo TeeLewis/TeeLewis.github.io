@@ -11,7 +11,8 @@ The game ends once a player reaches 11 points.
 - What `if`s will there be?
 If paddle touches top or bottom edge then reverse the paddle movement.
 If ball touches paddle, then increase ball speed and reverse the ball.
-If ball touches right or left edge then end game.
+If ball touches right or left edge then give point to the scoring player.
+if score is equal to 11 then end game.  
 
 ### Visual Game Components:
 - What are the visual game components? For example, in Bouncing Box, the game components were the board and the box.
@@ -24,7 +25,9 @@ The paddles, the ball, and score boxes.
   The Paddles and the ball
 
 - What data will you need to manage each game component? For example, in Bouncing Box, the data values were `positionX`, `speedX`, and `points`.
-I will need to manage the postion, speed, points, and keys.
+Players - I will need data for two scores(score1 and score2)
+Ball - I will need positionX, positionY, speedX, and speedY 
+Paddles - I will need positionY and speedY
 
 
 ### Events / Logic 
